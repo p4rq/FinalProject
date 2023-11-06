@@ -2,10 +2,7 @@ package singleton;
 
 import Adapter.Converter;
 import Adapter.ConverterAdapter;
-import Decorator.BIGroupDecorator;
-import Decorator.BazisADecorator;
-import Decorator.GEDGDecorator;
-import Decorator.IApartment;
+import Decorator.*;
 import Factoryv2.*;
 import Observer.EmailMsgObserver;
 import Observer.PropertyAgency;
@@ -75,8 +72,9 @@ public class CLIrunner {
 
 
         if (group.equals("1")) {
-            tempApartment = new BIGroupDecorator(new BazisADecorator.Apartment(""));
-            tempApartment.advantages("");
+            tempApartment = new BIGroup(new GroupImpl());
+            String decoratedApartmentDescription = tempApartment.decorate();
+            System.out.println(decoratedApartmentDescription);
             System.out.println("Please, select a class:" + "\n" +
                     "1 - Econom" + "\n" +
                     "2 - Comfort" + "\n" +
@@ -94,8 +92,9 @@ public class CLIrunner {
 
             }
         } else if (group.equals("2")) {
-            tempApartment = new BazisADecorator(new BazisADecorator.Apartment(""));
-            tempApartment.advantages("");
+            tempApartment = new BazisA(new GroupImpl());
+            String decoratedApartmentDescription = tempApartment.decorate();
+            System.out.println(decoratedApartmentDescription);
             System.out.println("Please, select a class:" + "\n" +
                     "1 - Econom" + "\n" +
                     "2 - Comfort" + "\n" +
@@ -113,8 +112,9 @@ public class CLIrunner {
 
             }
         } else if (group.equals("3")) {
-            tempApartment = new GEDGDecorator(new BazisADecorator.Apartment(""));
-            tempApartment.advantages("");
+            tempApartment = new GEDG(new GroupImpl());
+            String decoratedApartmentDescription = tempApartment.decorate();
+            System.out.println(decoratedApartmentDescription);
             System.out.println("Please, select a class:" + "\n" +
                     "1 - Econom" + "\n" +
                     "2 - Comfort" + "\n" +
