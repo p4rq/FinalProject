@@ -2,7 +2,7 @@
 Briefly describe the project here.
 
 Table of Contents
-[Usage Section]Introduction
+[Usage Section](#usage)Introduction
 Project Structure
 Usage
 How to Run
