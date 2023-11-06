@@ -39,7 +39,9 @@ The project is organized into several packages and classes:
 These patterns are instrumental in ensuring that the project's codebase is easy to maintain, extend, and scale as new requirements emerge. Each pattern is applied following the principles of good software design to address specific issues within the project's context.
 
 ## UML Diagrams
-- ![My image](images/FinalProject.png) 
+### UML diagram without dependencies
+- ![My image](images/FinalProject.png)
+### UML diagram with dependencies
 - ![My image](images/FinalProject(withdepend).png)
 
 ## Contributions
