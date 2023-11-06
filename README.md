@@ -22,15 +22,15 @@ The project is organized into several packages and classes:
 
 ### Strategy Pattern
 - **Purpose**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
-- **Implementation**: Employed to provide various algorithms or strategies for processing data, which can be selected and applied at runtime depending on the current context or user preferences.
+- **Implementation**: Calculates the price per n square meter, specific company and class
 
 ### Observer Pattern
 - **Purpose**: Allows a subject to notify an array of observers about changes in its state.
-- **Implementation**: Utilized to implement event handling where various parts of the application listen for and react to specific events, such as user actions or system events.
+- **Implementation**: Receives by e-mail the price of the ordered square meter
 
 ### Decorator Pattern
 - **Purpose**: Attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
-- **Implementation**: Used to add additional behaviors to objects at runtime without altering the code of the underlying classes.
+- **Implementation**: ....
 
 ### Adapter Pattern
 - **Purpose**: Allows incompatible interfaces to work together. This is done by wrapping the otherwise incompatible object in an adapter to give it a compatible interface.
