@@ -2,13 +2,13 @@
 Briefly describe the project here.
 
 Table of Contents
-[Usage Section](#usage)Introduction
-Project Structure
-Usage
-How to Run
-Technologies Used
-Contributing
-License
+- [Introduction](#introduction)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [How to Run](#how-to-run)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 Introduction
 Provide a concise overview of the project. Explain its purpose, the problems it aims to solve, or the goals it intends to achieve. You can also include any background information relevant to the project.
 
