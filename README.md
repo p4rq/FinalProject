@@ -1,41 +1,47 @@
 # FinalProject
-Briefly describe the project here.
 
-Table of Contents
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [How to Run](#how-to-run)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-
-  
--Introduction
-Provide a concise overview of the project. Explain its purpose, the problems it aims to solve, or the goals it intends to achieve. You can also include any background information relevant to the project.
-
-Project Structure
+# Project Structure
 The project is organized into several packages and classes:
 
 - Adapter: Contains classes related to the adapter pattern.
 - Decorator: Holds classes implementing the decorator pattern.
-- Factoryv2: Includes classes for implementing the factory pattern.
+- Factory: Includes classes for implementing the factory pattern.
 - Observer: Contains classes implementing the observer pattern.
 - Singleton: Holds the singleton pattern implementation.
 - Strategy: Contains classes associated with the strategy pattern.
-- src: Directory containing the source code.
-- out: Directory containing compiled production code.
-Usage
-Provide instructions or examples on how to use the project. You can include code snippets, explanations, or any relevant information to assist users in understanding the functionalities provided by the project.
 
-How to Run
-Detail the steps required to run the project. This can include installation instructions, dependencies, and any specific configuration needed to execute the project successfully.
+## Design Patterns Used
 
-Technologies Used
-List the technologies, languages, frameworks, or libraries used in the project. This could include Java, design patterns, or any other significant tools.
+### Singleton Pattern
+- **Purpose**: Ensures a class has only one instance and provides a global point of access to it.
+- **Implementation**: Used in the creation of the main application controller to manage the global state throughout the application lifecycle.
 
-Contributing
-Guidelines for contributing to the project. This could include information about how to submit bug reports, suggest enhancements, or contribute code.
+### Factory Method Pattern
+- **Purpose**: Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
+- **Implementation**: Divides Astana into several districts(Almaty, Esil, Nura) and .
 
-License
-Indicate the project's license and any other relevant information regarding its usage, distribution, or modification.
+### Strategy Pattern
+- **Purpose**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+- **Implementation**: Employed to provide various algorithms or strategies for processing data, which can be selected and applied at runtime depending on the current context or user preferences.
+
+### Observer Pattern
+- **Purpose**: Allows a subject to notify an array of observers about changes in its state.
+- **Implementation**: Utilized to implement event handling where various parts of the application listen for and react to specific events, such as user actions or system events.
+
+### Decorator Pattern
+- **Purpose**: Attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+- **Implementation**: Used to add additional behaviors to objects at runtime without altering the code of the underlying classes.
+
+### Adapter Pattern
+- **Purpose**: Allows incompatible interfaces to work together. This is done by wrapping the otherwise incompatible object in an adapter to give it a compatible interface.
+- **Implementation**: Used to integrate external libraries or services with incompatible interfaces into the application without modifying the original code.
+
+These patterns are instrumental in ensuring that the project's codebase is easy to maintain, extend, and scale as new requirements emerge. Each pattern is applied following the principles of good software design to address specific issues within the project's context.
+
+## Contributions
+
+Please feel free to submit pull requests or create issues if you have suggestions or find a bug.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
