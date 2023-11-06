@@ -14,8 +14,13 @@ The project is organized into several packages and classes:
 
 ### Singleton Pattern
 - **Purpose**: Ensures a class has only one instance and provides a global point of access to it.
-- **Implementation**: Used in the creation of the main application controller to manage the global state throughout the application lifecycle.
+- **Implementation**: We've declared a volatile static instance of CLIrunner that will hold the lazily-initialized Singleton instance. The volatile keyword ensures that changes to the instance are visible to all threads.
 
+The getInstance() method provides a way to access the Singleton. The use of double-checked locking (checking the instance twice) allows us to avoid the cost of acquiring a lock when accessing the Singleton instance after it's been initialized.
+
+We've defined a private constructor for CLIrunner to prevent other classes from directly creating a new instance.
+
+The clirunner method is static, which suggests it can be modified to work with the Singleton instance or changed to a non-static context if required.
 ### Factory Method Pattern
 - **Purpose**: Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
 - **Implementation**: Divides Astana into several districts(Almaty, Esil, Nura) and .
