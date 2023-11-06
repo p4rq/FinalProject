@@ -16,14 +16,9 @@ The project is organized into several packages and classes:
 - **Purpose**: Ensures a class has only one instance and provides a global point of access to it.
 - **Implementation**: We've declared a volatile static instance of CLIrunner that will hold the lazily-initialized Singleton instance. The volatile keyword ensures that changes to the instance are visible to all threads.
 
-The getInstance() method provides a way to access the Singleton. The use of double-checked locking (checking the instance twice) allows us to avoid the cost of acquiring a lock when accessing the Singleton instance after it's been initialized.
-
-We've defined a private constructor for CLIrunner to prevent other classes from directly creating a new instance.
-
-The clirunner method is static, which suggests it can be modified to work with the Singleton instance or changed to a non-static context if required.
 ### Factory Method Pattern
 - **Purpose**: Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
-- **Implementation**: Divides Astana into several districts(Almaty, Esil, Nura) and .
+- **Implementation**: Divides Astana into several districts(Almaty, Esil, Nura) and shows the name of district.
 
 ### Strategy Pattern
 - **Purpose**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
@@ -39,7 +34,7 @@ The clirunner method is static, which suggests it can be modified to work with t
 
 ### Adapter Pattern
 - **Purpose**: Allows incompatible interfaces to work together. This is done by wrapping the otherwise incompatible object in an adapter to give it a compatible interface.
-- **Implementation**: Used to integrate external libraries or services with incompatible interfaces into the application without modifying the original code.
+- **Implementation**: Adapter pattern converts the sum of price of "n" square metres into several(Dollar, Euro, Ruble) currencies.
 
 These patterns are instrumental in ensuring that the project's codebase is easy to maintain, extend, and scale as new requirements emerge. Each pattern is applied following the principles of good software design to address specific issues within the project's context.
 
