@@ -30,7 +30,7 @@ The project is organized into several packages and classes:
 
 ### Decorator Pattern
 - **Purpose**: Attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
-- **Implementation**: ....
+- **Implementation**: Gives brief information about the group
 
 ### Adapter Pattern
 - **Purpose**: Allows incompatible interfaces to work together. This is done by wrapping the otherwise incompatible object in an adapter to give it a compatible interface.
