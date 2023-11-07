@@ -14,6 +14,7 @@ public class PropertyAgency implements Observable{
         notifyObserver();
     }
 
+
     @Override
     public void registerObserver(Observer.EmailMsgObserver o) {
         customers.add(o);
